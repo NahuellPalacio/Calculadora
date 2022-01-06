@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200&family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family:'Bebas Neue', cursive;
+    font-size: 85%;
+}
+body{
+    background-image: url(../img/pexels-vlado-paunovic-10612715.jpg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+
+
+.calculator-display{
+     padding: 25px 15px;
+     width: 100%;
+     background-color: white;
+     text-align: right;
+     border: 3px solid black;
+     overflow-x: auto;
+     
+}
+
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+
+}
+
+.calculator-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.keypad-button:hover{
+    filter: brightness(60%);
+    transition: filter.20s;
+}
+
+
+.keypad-button{
+    background-color: rgb(158, 74, 238)
+}
